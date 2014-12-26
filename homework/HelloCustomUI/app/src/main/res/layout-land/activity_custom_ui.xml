@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CustomUI"
+    android:background="@drawable/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/callButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_call"
+                android:layout_column="0"
+                android:background="#669900"/>
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/lockButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_lock"
+                android:background="#FF8800"/>
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/smsButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_sms"
+                android:background="#9933CC"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/photoButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_instagram"
+                android:background="#FFF000"/>
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/musicButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_headphones"
+                android:background="#CC0000"/>
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/ieButton"
+                android:layout_weight="25"
+                android:src="@drawable/ic_ie"
+                android:background="#33B5E5"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <include
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/time" />
+    </LinearLayout>
+    <TextView
+        android:layout_weight="0"
+        android:text="battery state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/date"
+        android:background="#CC000443"
+        android:paddingLeft="10dp"
+        android:text="17-12-2012"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ampm"
+        android:background="#CC000443"
+        android:paddingRight="15dp"
+        android:text="PM"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+
+    <TextView
+        android:id="@+id/hour"
+        android:background="#CC000443"
+        android:text="10:10"
+        android:textColor="#fff"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" />
+</LinearLayout>
